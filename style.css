@@ -1,0 +1,122 @@
+body {
+    font-family: 'Montserrat';
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: rgb(249, 237, 237);
+}
+
+.main-text {
+    position: absolute;
+    top: 40vh;
+    left: 43vw;
+    width: 45vw;
+    height: 8vh;
+    font-size: 10vh;
+    font-weight: bold;
+    color: rgb(130, 49, 49);
+    cursor: pointer;
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 1s ease, font-size 0.3s ease, color 0.3s ease;
+}
+
+.main-text:hover {
+    font-size: 10.1vh;
+    color: rgb(161, 71, 71);
+}
+
+.AddTasks-main {
+    position: absolute;
+    top: 80vh;
+    left: 52.5vw;
+    width: 17vw;
+    height: 4.5vw;
+    font-size: 3.3vh;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    padding-left: 8vh;
+    background-color: rgb(130, 49, 49);
+    color: white;
+    border: none;
+    border-radius: 2vh;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    transition: transform 0.25s ease-in-out;
+    box-shadow: 0px 0px 0px 0px #000000;
+}
+
+.AddTasks-main:hover {
+    background-color: rgb(161, 71, 71);
+    transform: scale(1.02);
+}
+
+.add-img-main {
+    position: absolute;
+    width: 7vh;
+    left: 3.5vh;
+    top: 1.2vh;
+}
+
+.sidebar {
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+    width: 20vw;
+    height: 100vh;
+    font-size: 3.5vh;
+    font-family: 'Montserrat';
+    padding-left: 8vh;
+    background-color: rgb(183, 99, 99);
+    color: white;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    transition: transform 0.25s ease-in-out;
+    box-shadow: 0px 0px 0px 0px #000000;
+}
+
+.sidebar-main-text {
+    position: absolute;
+    top: 4vh;
+    left: 5vh;
+    font-weight: bold;
+    font-size: 3.3vh;
+}
+
+.notifications {
+    position: absolute;
+    top: 14vh;
+    left: 2.3vw;
+    width: 17vw;
+    height: 3.5vw;
+    font-size: 3vh;
+    font-family: 'Montserrat';
+    padding-left: 2vh;
+    background-color: rgb(249, 237, 237);
+    color: rgb(70, 70, 70);
+    border: none;
+    border-radius: 2vh;
+    cursor: pointer;
+    transition: transform 0.25s ease-in-out;
+    box-shadow: 0px 0px 0px 0px #000000;
+    display: flex;
+    align-items: center;
+}
+
+.notifications:hover {
+    background-color: rgb(161, 71, 71);
+    transform: scale(1.02);
+}
+
+.notifications-img {
+    position: absolute;
+    width: 5vh;
+    left: 3.5vh;
+    top: 1.2vh;
+}
