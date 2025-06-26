@@ -14,7 +14,34 @@
     </head>
 
     <body>
-      <script src="script.js"></script>
+
+        <div class="main-text" id="main-text">Add New Tasks</div>
+        <button class="AddTasks-main" onclick="AddTasks()"><img class="add-img-main" src="resources/Add-img.png"> Add Tasks</button>
+
+        <div class="sidebar" id="sidebar">
+            <p class="sidebar-main-text">Complete Daily Goals</p>
+            
+            <button class="notifications" onclick="Notifications()">
+                <img class="notifications-img" src="resources/Notification_img.png"> Notifications
+            </button>
+
+            <button class="goals" onclick="Goals()">
+                <img class="goals-img" src="resources/Goal_img.png"> Goals
+            </button>
+
+            <button class="AddTasks" onclick="AddTasks()"><img class="add-img" src="resources/Add-img.png"> Add Tasks</button>
+
+            <p class="general-tasks-text">General Tasks</p>
+            <div class="general-tasks" id="general-tasks" onclick="ShowTasks()">
+            </div>
+
+            <p class="workspaces-text">Workspaces</p>
+            <div class="workspaces" id="workspaces" onclick="ShowWorkspaces()">
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
     </body>
 
 </html>
