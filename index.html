@@ -13,10 +13,26 @@
             rel="stylesheet">
     </head>
 
-    <body>
+    <body id="body">
 
         <div class="main-text" id="main-text">Add New Tasks</div>
-        <button class="AddTasks-main" onclick="AddTasks()"><img class="add-img-main" src="resources/Add-img.png"> Add Tasks</button>
+        <button class="AddTasks-main" onclick="AddTasks(1)"><img class="add-img-main" src="resources/Add-img.png"> Add Tasks</button>
+
+        <div class="container" id="container"></div>
+
+        <div class="task-window" id="task-window">
+                <p class="window-text">Add Task</p>
+                <input class="subject" id="subject" type="text" placeholder="Subject">
+                <input class="description" id="description" type="text" placeholder="Description">
+
+                <input class="date" id="date" type="date">
+                <button class="priority" id="priority" onclick="priorityOpen()">Priority</button>
+                <button class="reminder" id="reminder" onclick="reminderOpen()">Reminder</button>
+
+                <button class="workspaces-btn" id="workspaces-btn" onclick="workspacesOpen()">Choose Workspace</button>
+                <button class="cancel" id="cancel" onclick="AddTasks(0)">Cancel</button>
+                <button class="create" id="create" onclick="CreateTasks()">Create</button>
+        </div>
 
         <div class="sidebar" id="sidebar">
             <p class="sidebar-main-text">Complete Daily Goals</p>
@@ -26,7 +42,7 @@
             </button>
 
             <button class="goals" onclick="Goals()">
-                <img class="goals-img" src="resources/Goal_img.png"> Goals
+                <img class="goals-img" src="resources/Goal_img.png"> View Goals
             </button>
 
             <button class="AddTasks" onclick="AddTasks()"><img class="add-img" src="resources/Add-img.png"> Add Tasks</button>
